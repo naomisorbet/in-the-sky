@@ -1,0 +1,17 @@
+<h1>Subscription <%=@subscription.id%></h1>
+<p id="notice"><%= notice %></p>
+
+<table>
+	<tr>
+		<td>Interest</td>
+		<td>Location</td>
+	</tr>
+	<tr>
+		<td><%= @subscription.interest%></td>
+		<td><%= @subscription.zip%></td>
+	</tr>
+</table>
+
+
+<%= link_to 'Edit', edit_subscription_path(@subscription) %> |
+<%= link_to 'Back', subscriptions_path %>
